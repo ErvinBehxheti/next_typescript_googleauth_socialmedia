@@ -12,7 +12,7 @@ import useAuthStore from '../store/authStore';
 const Sidebar: NextPage = () => {
   const [showSidebar, setShowSidebar] = useState<Boolean>(true);
   const { pathname } = useRouter();
-  const { fetchAllUsers, allUsers }: any = useAuthStore();
+  const { fetchAllUsers, allUsers } = useAuthStore();
 
   const activeLink = 'flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#F51997] rounded';
 
